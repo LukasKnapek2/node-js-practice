@@ -3,6 +3,7 @@ let fs = require('fs');
 const { URL } = require('url');
 const path = require('path');
 
+
 function readFileHandler(filename, response, statusCode = 200) {
     fs.readFile(path.join(__dirname, filename), function (err, data) {
          if (err) {
